@@ -20,7 +20,7 @@ export const useFetchQestion = () => {
       try {
         // let question = await data;
         const [{ questions, answers }] = await getServerData(
-          "https://mern-quiz-appliction.vercel.app/api/questions",
+          "https://mern-quiz-appliction.onrender.com/api/questions",
           (data) => data
         );
 
