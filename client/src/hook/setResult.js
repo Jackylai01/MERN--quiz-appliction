@@ -23,7 +23,7 @@ export const usePublishResult = (resultData) => {
     try {
       if (result !== [] && !username) throw new Error("無法存取答案");
       await postServerData(
-        "http://localhost:8080/api/result",
+        "https://mern-quiz-appliction.vercel.app/api/result",
         resultData,
         (data) => data
       );
