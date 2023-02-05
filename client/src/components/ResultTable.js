@@ -5,7 +5,7 @@ const ResultTable = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    getServerData(`https://mern-quiz-appliction.vercel.app/api/result`, (res) => {
+    getServerData(`https://mern-quiz-appliction.onrender.com/api/result`, (res) => {
       setData(res);
     });
   }, []);
