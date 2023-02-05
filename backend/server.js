@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //跨域設定
 const corsOptions = {
-  origin: ["http://localhost:8080", "http://localhost:3000"],
+  origin: ["http://localhost:8080", "http://localhost:3000","https://mern-quiz-appliction.vercel.app"],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
   allowedHeaders: ["Content-Type"],
 };
